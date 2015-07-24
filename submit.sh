@@ -1,0 +1,3 @@
+echo Testing $1...
+env GPU_ID=$2 ALE_LOGIN=team_5 ALE_PASS=8beeL4 ALE_HOST=127.0.0.1 ALE_PORT=17005 ./run_nolearn $1 DQN3_0_1_$1_FULL_CODED.t7 |tee $1.test.log
+echo Testing $1 DONE
